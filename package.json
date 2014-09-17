@@ -1,0 +1,23 @@
+{
+  "name": "Nikhil",
+  "version": "0.0.0",
+  "description": "this app is so cool man fuck yeah",
+  "main": "chat.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nikhilpatil2012/dan.git"
+  },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "author": "Nikhil",
+  "license": "Ideapot",
+  "bugs": {
+    "url": "https://github.com/nikhilpatil2012/dan.git/issues"
+  },
+  "homepage": "https://github.com/nikhilpatil2012/dan.git"
+}
