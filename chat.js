@@ -1,11 +1,16 @@
+var net = require('net');
 
-  var server = require('net').createServer(function(connection){
+var server = net.createServer(function (socket) {
 
-    console.log("New subscriber has registered");
+ socket.setEncoding('utf8');
 
+  socket.write('Echo server\r\n');
+  socket.on('data', function(chunk) {
+    //socket.write('Echo server\r\n');
+    //console.log(chunk);
+    socket.write(chunk);
   });
+  socket.on('end', socket.end);
+});
 
-  server.listen(process.env.PORT || 5000, function(){
-  	 console.log("Server is listening to the port 5000");
-  });
-    
+server.listen(5000, '192.168.1.40');
