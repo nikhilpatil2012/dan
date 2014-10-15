@@ -13,4 +13,4 @@ var server = net.createServer(function (socket) {
   socket.on('end', socket.end);
 });
 
-server.listen(5000, '192.168.1.40');
+server.listen(5000, '54.88.136.216');
